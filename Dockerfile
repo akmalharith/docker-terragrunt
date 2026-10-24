@@ -7,8 +7,8 @@ ARG TARGETARCH
 
 # Which flavor of image to build
 ARG SLIM=no
-ARG TF=yes
-ARG OT=no
+ARG TF=no
+ARG OT=yes
 ARG TG=yes
 ARG AWS=no
 ARG GCP=no
@@ -16,8 +16,8 @@ ARG GCP=no
 # Versions of dependencies
 ARG GCP_VERSION=585.0.0
 ARG TF_VERSION=1.16.3
-ARG OT_VERSION=1.12.6
-ARG TG_VERSION=1.1.5
+ARG OT_VERSION=1.13.1
+ARG TG_VERSION=1.2.1
 
 # Pinned tool versions (override via --build-arg if needed)
 ARG TFLINT_VERSION=0.64.0
