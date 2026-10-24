@@ -167,25 +167,25 @@ jobs:
           pull_with_retry "${DOCKER_IMAGE}:${FLAVOR}-ot-${OT_VERSION}-tg-${TG_VERSION}"
 
       - name: Cont.Struc.Test - ${{ matrix.flavor }} (TF image)
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-tf-${{ env.TF_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/${{ matrix.flavor }}.yml
 
       - name: Cont.Struc.Test - ${{ matrix.flavor }} (OT image)
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-ot-${{ env.OT_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/${{ matrix.flavor }}.yml
 
       - name: Cont.Struc.Test - Terraform
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-tf-${{ env.TF_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/tf.yml
 
       - name: Cont.Struc.Test - OpenTofu
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-ot-${{ env.OT_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/ot.yml
@@ -291,25 +291,25 @@ jobs:
           pull_with_retry "${DOCKER_IMAGE}:${FLAVOR}-ot-${OT_VERSION}-tg-${TG_VERSION}"
 
       - name: Cont.Struc.Test - ${{ matrix.flavor }} (TF image)
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-tf-${{ env.TF_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/${{ matrix.flavor }}.yml
 
       - name: Cont.Struc.Test - ${{ matrix.flavor }} (OT image)
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-ot-${{ env.OT_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/${{ matrix.flavor }}.yml
 
       - name: Cont.Struc.Test - Terraform
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-tf-${{ env.TF_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/tf.yml
 
       - name: Cont.Struc.Test - OpenTofu
-        uses: akmalharith/action-container-structure-test@v1
+        uses: devops-infra/action-container-structure-test@v1
         with:
           image: akmalharith/docker-terragrunt:${{ matrix.flavor }}-ot-${{ env.OT_VERSION }}-tg-${{ env.TG_VERSION }}
           config: tests/ot.yml
