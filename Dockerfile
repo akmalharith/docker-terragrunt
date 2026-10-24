@@ -7,8 +7,8 @@ ARG TARGETARCH
 
 # Which flavor of image to build
 ARG SLIM=no
-ARG TF=yes
-ARG OT=no
+ARG TF=no
+ARG OT=yes
 ARG TG=yes
 ARG AWS=no
 ARG GCP=no
